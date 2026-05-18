@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import showroom from "@/assets/father.jpeg";
+const showroom = "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Counter } from "@/components/site/Counter";
 import { ShieldCheck, Globe, Wrench, Award } from "lucide-react";
 

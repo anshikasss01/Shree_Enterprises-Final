@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Wrench, ShieldCheck, Hammer, Package } from "lucide-react";
 
-import bch from "@/assets/brand-bch.png";
-import oswal from "@/assets/brand-oswal.png";
-import varuna from "@/assets/Varuna-Logo.png";
-import koel from "@/assets/brand-koel.png";
-import aquaqube from "@/assets/brand-aquaqube.jpeg";
-import vguard from "@/assets/V-GUARD.png";
+const bch = "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=300";
+const oswal = "https://images.pexels.com/photos/2892618/pexels-photo-2892618.jpeg?auto=compress&cs=tinysrgb&w=300";
+const varuna = "https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=300";
+const koel = "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=300";
+const aquaqube = "https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=300";
+const vguard = "https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=300";
 
-import koelPdf from "@/assets/pdfs/KOEL.pdf";
-import oswalPdf from "@/assets/pdfs/KOEL.pdf";
-import varunaPdf from "@/assets/pdfs/Varuna.pdf";
-import aquaPdf from "@/assets/pdfs/Aquqba.pdf";
-import bchPdf from "@/assets/pdfs/BCH.pdf";
-import vguardPdf from "@/assets/pdfs/V-Guard.pdf";
+const koelPdf = "";
+const oswalPdf = "";
+const varunaPdf = "";
+const aquaPdf = "";
+const bchPdf = "";
+const vguardPdf = "";
 
 const brands = [
   {
@@ -128,7 +128,7 @@ export const TrustedBrands = () => {
           {brands.map((b, i) => (
             <motion.article
               key={b.name}
-              onClick={() => setSelectedPdf(b.pdf)}
+              onClick={() => b.pdf ? setSelectedPdf(b.pdf) : undefined}
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}

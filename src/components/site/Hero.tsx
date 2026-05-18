@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
-import hero from "@/assets/hero.jpg";
-import heroFloat from "@/assets/hero-float.png";
+const hero = "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1600";
+const heroFloat = "https://images.pexels.com/photos/2889922/pexels-photo-2889922.jpeg?auto=compress&cs=tinysrgb&w=800";
 import { Counter } from "@/components/site/Counter";
 
 export const Hero = () => {

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import b1 from "@/assets/blog-1.jpg";
-import b2 from "@/assets/blog-2.jpg";
-import b3 from "@/assets/blog-3.jpg";
+const b1 = "https://images.pexels.com/photos/2889922/pexels-photo-2889922.jpeg?auto=compress&cs=tinysrgb&w=800";
+const b2 = "https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg?auto=compress&cs=tinysrgb&w=800";
+const b3 = "https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=800";
 
 const posts = [
   {

@@ -1,25 +1,23 @@
-import domestic from "@/assets/res-domestic.png";
-import booster from "@/assets/res-booster.png";
-import solar from "@/assets/res-solar.png";
-import heat from "@/assets/res-heat.png";
-import agriBorewell from "@/assets/agri-borewell.png";
-import agriOpenwell from "@/assets/agri-openwell.png";
-import agriCmb from "@/assets/agri-cmb.jpeg";
-import agriKoelMono from "@/assets/agri-koel-mono.png";
-import industrial from "@/assets/pump-industrial.jpg";
-import waterSoftener from "@/assets/res-softener.png";
-import mmbDomestic from "@/assets/res-mmb.png";
-import indWaterTransfer from "@/assets/ind-water-transfer.png";
-import indWaterSoftener from "@/assets/ind-water-softener.png";
-import indWastewater from "@/assets/ind-wastewater.png";
-import indMultistage from "@/assets/ind-multistage.png";
-import indFirefighting from "@/assets/ind-firefighting.jpg";
-import indMotor from "@/assets/ind-induction-motor.jpg";
-import solarpump from "@/assets/solarPump.png";
-import indus1 from "@/assets/industrial1.png";
-import indus2 from "@/assets/indus2.png";
-import wastwater from "@/assets/wastwater.jpeg";
-import indusction2 from "@/assets/indusction2.png";
+// Product images from Pexels
+const domestic = "https://images.pexels.com/photos/5486741/pexels-photo-5486741.jpeg?auto=compress&cs=tinysrgb&w=800";
+const booster = "https://images.pexels.com/photos/2892618/pexels-photo-2892618.jpeg?auto=compress&cs=tinysrgb&w=800";
+const solar = "https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=800";
+const heat = "https://images.pexels.com/photos/3832593/pexels-photo-3832593.jpeg?auto=compress&cs=tinysrgb&w=800";
+const agriBorewell = "https://images.pexels.com/photos/2889922/pexels-photo-2889922.jpeg?auto=compress&cs=tinysrgb&w=800";
+const agriCmb = "https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg?auto=compress&cs=tinysrgb&w=800";
+const agriKoelMono = "https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg?auto=compress&cs=tinysrgb&w=800";
+const industrial = "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800";
+const waterSoftener = "https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=800";
+const mmbDomestic = "https://images.pexels.com/photos/3489659/pexels-photo-3489659.jpeg?auto=compress&cs=tinysrgb&w=800";
+const indWastewater = "https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=800";
+const indFirefighting = "https://images.pexels.com/photos/1119775/pexels-photo-1119775.jpeg?auto=compress&cs=tinysrgb&w=800";
+const indMultistage = "https://images.pexels.com/photos/236698/pexels-photo-236698.jpeg?auto=compress&cs=tinysrgb&w=800";
+const indMotor = "https://images.pexels.com/photos/3822843/pexels-photo-3822843.jpeg?auto=compress&cs=tinysrgb&w=800";
+const solarpump = "https://images.pexels.com/photos/9875414/pexels-photo-9875414.jpeg?auto=compress&cs=tinysrgb&w=800";
+const indus1 = "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800";
+const indus2 = "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800";
+const wastwater = "https://images.pexels.com/photos/2310904/pexels-photo-2310904.jpeg?auto=compress&cs=tinysrgb&w=800";
+const indusction2 = "https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=800";
 
 export type PumpItem = {
   slug: string;
@@ -52,7 +50,7 @@ export const solutions: Solution[] = [
       {
         slug: "domestic-water-pump",
         name: "Domestic Water Pump",
-        image: mmbDomestic,//domestic
+        image: mmbDomestic,
         desc: "Compact monoblock pumps for overhead tank filling, daily household use and uninterrupted water supply.",
         features: ["Compact monoblock design", "Quiet operation", "Energy-efficient motor", "Low maintenance"],
         applications: ["Overhead tank filling", "Bungalows & villas", "Apartments", "Daily household use"],
@@ -122,7 +120,7 @@ export const solutions: Solution[] = [
       {
         slug: "submersible-openwell",
         name: "Submersible OpenWell",
-        image: domestic,//mmbDomestic
+        image: domestic,
         desc: "Submersible OpenWell — compact, energy-efficient pumps engineered for everyday household water needs.",
         features: ["Stainless steel impeller", "Copper winding", "High efficiency", "Corrosion resistant"],
         applications: ["Open wells", "Sumps & tanks", "Domestic supply", "Garden watering"],
@@ -160,7 +158,7 @@ export const solutions: Solution[] = [
       {
         slug: "centrifugal-monoblock-pump",
         name: "Centrifugal Monoblock Pump",
-        image: agriKoelMono,//agriKoelMono
+        image: agriKoelMono,
         desc: "KOEL Electric openwell pumps with cast iron / SS motor body, VPI-treated stator, copper winding and CED-coated CI parts — engineered for canal, pond and open-well irrigation.",
         features: ["VPI-treated stator", "Pure copper winding", "CED-coated CI parts", "CI / SS body"],
         applications: ["Canal lifting", "Pond / tank irrigation", "Open-well farming", "Field flooding"],
@@ -174,8 +172,7 @@ export const solutions: Solution[] = [
       {
         slug: "solar-agri-pump",
         name: "Solar Agri & Solar Pumps",
-        // name: "Solar Agri & Openwell Pump",
-        image: solarpump,//agriOpenwell
+        image: solarpump,
         desc: "Heavy-duty CMB centrifugal monoblock pumpset with high-efficiency impeller — ideal for farming, gardening and rural water supply with stable pressure.",
         features: ["Solar VFD controller", "Zero diesel cost", "MPPT tracking", "Off-grid operation"],
         applications: ["Off-grid farms", "PM-KUSUM projects", "Rural water supply", "Drip & sprinkler"],
@@ -213,7 +210,7 @@ export const solutions: Solution[] = [
       {
         slug: "water-transfer-pump",
         name: "Water Transfer Pump",
-        image: indus1,//indWaterTransfer
+        image: indus1,
         desc: "KOEL Industrial Monoblock pumps with cast iron impeller, F-class insulation and IP55 protection — engineered for clean water transfer, cooling towers and high-pressure industrial use.",
         features: ["F-class insulation", "IP55 protection", "Cast iron impeller", "Continuous duty"],
         applications: ["Cooling towers", "Process water transfer", "Building utilities", "HVAC systems"],
@@ -241,7 +238,7 @@ export const solutions: Solution[] = [
       {
         slug: "waste-water-pumps",
         name: "Waste Water Pumps",
-        image: wastwater,//indWastewater
+        image: wastwater,
         desc: "KOEL X-PEL cutter and sewage submersible pumps with SS body, double-ended mechanical seal and CED-coated parts — for ETPs, STPs, sewage and effluent handling.",
         features: ["Cutter / non-clog impeller", "Double mechanical seal", "SS body", "Handles solids"],
         applications: ["STP / ETP plants", "Sewage lifting", "Industrial effluent", "Drainage systems"],
@@ -283,7 +280,7 @@ export const solutions: Solution[] = [
       {
         slug: "induction-electric-motors",
         name: "Induction Electric Motors",
-        image: indusction2,//indMotor
+        image: indusction2,
         desc: "Three-phase TEFC induction motors with copper winding, F-class insulation and IP55 protection — robust drive units for pumps, compressors and industrial machinery.",
         features: ["TEFC enclosure", "Copper winding", "F-class insulation", "IP55 protection"],
         applications: ["Pumps & compressors", "Conveyors", "Machine tools", "General industrial drive"],
